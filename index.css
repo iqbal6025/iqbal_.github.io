@@ -1,0 +1,545 @@
+
+*{
+   margin:0px;
+   padding:0px;
+   box-sizing: border-box;
+   
+}
+body{
+    
+    font-family: montserrat;
+}
+.sl{
+        margin:0;
+        padding:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        background:#000;
+}
+
+#section1 .container .scroll{
+    font-size: 1rem;
+    position: relative;
+    top:280px;
+    text-align: center;
+
+}
+.scroll h1{
+    cursor:pointer;
+}
+.scroll i{
+    padding:10px 10px;
+    color:whitesmoke;
+    transition: transform 1s;
+    cursor: pointer;
+}
+.scroll i:hover{
+    transform:translateY(10px);
+}
+
+
+#moti1{
+    position: relative;
+    top:50px;
+    animation:type 7s steps(43) infinite; 
+    width:0ch;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right:2px solid white;
+}
+@keyframes type{
+    0%{
+        width:0ch;
+    }
+    50%{
+        width:34ch;
+    }
+}
+
+#moti2{
+    position: relative;
+    top:100px;
+}
+
+
+nav{background-image: linear-gradient(to right,black,gray);
+    grid-area:nav;   
+    
+    color:whitesmoke;
+ }
+
+ #title3{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+nav h1{
+    color:white;
+    font-size: 40px;
+    position: relative;
+    
+    color:white;
+}
+#section1{
+    background-color: black;
+}
+
+#section1 .container{
+    min-height: 100vh;
+    background-image:linear-gradient(to bottom,black,grey);
+    background-size: cover;
+    background-position: top center;
+}
+
+
+#h2{
+    position:relative;
+    margin:0;
+    font-size: 3em;
+    font-weight: 600;
+    color:#fff;
+    
+    overflow:hidden;
+}
+#h2:before{
+    content:'';
+    position:absolute;
+    left:110%;
+    width:120%;
+    height:100%;
+    background:linear-gradient(90deg,transparent 0%,gray 5%,white 100%);
+    animation:animate 5.5s linear forwards infinite;
+}
+@keyframes animate{
+        0%{
+            left:100%;
+        }
+        100%{
+            left:-20%;
+        }
+}
+span{
+    color:#ff022c;
+}
+
+
+.main{
+    border-radius: 20px;
+    margin:0px 4px;
+    
+    grid-area:main;
+    color:white;
+}
+
+.con{
+    max-width:300px;
+    position:relative;
+    top:150px;
+    text-align: center;
+    font-size: 23px;
+    font-family:sans-serif;
+}
+.con #first{
+    position: relative;
+    left:20px;
+}
+.con #second{ position:relative;
+              left:20px;}
+.con #last{
+     position: relative;
+     left:20px;
+}
+
+.con h3{
+    animation:scaling 2.5s ease-in-out infinite;
+}
+@keyframes scaling{
+    0%{
+       transform:scale(1);
+       color:green;
+    }
+    50%{
+        transform:scale(1.5);
+        color:white;
+    }
+    100%{
+        transform:scale(1);
+        color:orange;
+    }
+}
+.con h3:nth-child(1){
+    animation-delay: 0s;
+}
+.con h3:nth-child(2){
+    animation-delay:2s;
+}
+.con h3:nth-child(3){
+    animation-delay:4s;
+}
+
+
+
+#section1{
+    background-color: black;
+    overflow-x: hidden;
+}
+#section2{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+#section2 .container{
+    background-color: blueviolet;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    color:white;
+    min-height: 100vh;
+}
+#introduction{
+    position: relative;
+    left:20px;
+}
+#footer{
+    
+    background-image: linear-gradient(to right,rgb(126, 124, 124),rgb(207, 192, 192));
+}
+.image{
+    align-items: center;
+    justify-content: center;
+    display:flex;
+}
+
+.me{
+    width:130px;
+    height:150px;
+    position: relative;
+    top:30px;
+}
+.intro{
+    font-family: montserrat;
+    position: relative;
+    top:50px;
+}
+
+.head{
+    font-family: montserrat, sans-serif;
+    position:relative;
+    top:30px;
+    color:white;
+
+}
+
+
+#section3{
+    background-color: black;
+    overflow-x: hidden;
+}
+
+#section3 .container{
+    background-color: crimson;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    min-height:100vh;
+    color:white;
+    
+}
+.card{
+    margin:2px 25px;
+    color:black;
+    box-shadow: 2px 20px 15px black;
+    width:14rem;
+    transition: width 0.5s;
+}
+.card:hover{
+    width:15rem;
+}
+#certificate{
+    font-family: montserrat;
+    text-align: center;
+    color:white;
+}
+#section4{
+    background-color: black;
+    overflow-x: hidden;
+}
+#social{
+    color:white;
+    text-align: center;
+    position: relative;
+    top:20px;
+}
+
+
+#section4 .container{
+        background-color:gray;
+        height: 100vh;
+        
+}
+#section4 .container a{
+    text-decoration: none;
+    
+}
+#section4 .container a h2{
+    font-size: 22px;
+}
+#section4 .container .first{
+    color:black;
+    border:1px solid black;
+    position: relative;
+    background-color: white;
+    box-shadow: 10px 10px 5px black;
+    top:50px;
+}
+#section4 .container .first:active{
+    background-color:rgb(228, 217, 217);
+    box-shadow: 0 5px gray;
+    transform:translateY(4px);
+ }
+ #section4 .container .first h2,.first i{
+     position: relative;
+     left:20px;
+ }
+#section4 .container .second{
+    color:black;
+    border:1px solid black;
+    position: relative;
+    background-color: white;
+    box-shadow: 10px 10px 5px black;
+    top:120px;
+    
+    
+}
+#section4 .container .second:active{
+    background-color:rgb(228, 217, 217);
+    box-shadow: 0 5px gray;
+    transform:translateY(4px);
+ }
+ #section4 .container .second h2,.second i{
+     position: relative;
+     left:500px;
+ }
+
+#section4 .container .third{
+    color:black;
+    border:1px solid black;
+    position: relative;
+    background-color: white;
+    box-shadow: 10px 10px 5px black;
+    top:200px;
+    
+}
+#section4 .container .third:active{
+    background-color:rgb(228, 217, 217);
+    box-shadow: 0 5px gray;
+    transform:translateY(4px);
+ }
+ #section4 .container .third h2,.third i{
+    position: relative;
+    left:20px;
+}
+ 
+#section4 .container .fouth{
+    color:black;
+    border:1px solid black;
+    position: relative;
+    background-color: white;
+    box-shadow: 10px 10px 5px black;
+    top:270px;
+    font-size:24px;
+    cursor: pointer;
+}
+#section4 .container .fouth:active{
+   background-color:rgb(228, 217, 217);
+   box-shadow: 0 5px gray;
+   transform:translateY(4px);
+}
+#section4 .container .fouth h2,.fouth i{
+    position: relative;
+    left:450px;
+}
+#project{
+    color:white;
+    text-align: center;
+    position: relative;
+    top:10px;
+}
+#section5{
+    background-color: black;
+    overflow-x: hidden;
+    
+}
+#section5 .container a{
+    text-decoration: none;
+    outline:none;
+    color:black;
+    margin:40px 5px;
+    text-align: center;
+}
+
+#section5 .container{
+    background-image: linear-gradient(to bottom,black,gray); 
+    min-height:100vh; 
+}
+
+#section5 .container .first{
+    background-image: linear-gradient(to right,grey,white);
+    position: relative;
+    box-shadow: 10px 10px 5px whitesmoke;
+    top:30px;
+    border-radius: 10px;
+    
+    
+}
+#section5 .container .first:active{
+    background-color:rgb(228, 217, 217);
+    box-shadow: 0 5px gray;
+    transform:translateY(3px);
+ }
+#section5 .container .second{
+    background-image: linear-gradient(to left,grey,white);
+    position: relative;
+   
+    
+    box-shadow: 10px 10px 5px whitesmoke;
+    border-radius: 10px;
+}
+#section5 .container .second:active{
+    background-color:rgb(228, 217, 217);
+    box-shadow: 0 5px gray;
+    transform:translateY(3px);
+ }
+#section5 .container .third{
+    background-image: linear-gradient(to right,grey,white);
+    position: relative;
+    
+    box-shadow: 10px 10px 5px whitesmoke;
+    border-radius: 10px;
+}
+#section5 .container .third:active{
+    background-color:rgb(228, 217, 217);
+    box-shadow: 0 5px gray;
+    transform:translateY(3px);
+ }
+ #section5 .container .forth{
+    background-image: linear-gradient(to left,grey,white);
+    box-shadow: 10px 10px 5px whitesmoke;
+    border-radius: 10px;
+}
+#section5 .container .forth:active{
+    background-color:rgb(228, 217, 217);
+    box-shadow: 0 5px gray;
+    transform:translateY(3px);
+ }
+
+
+ @media screen and (max-width:600px){
+     .con h3{
+         font-size: 20px;
+         
+         
+     }
+     .card{
+         width: 10rem;
+         transition: width 1s;
+        
+         
+     }
+     .card:hover{
+         width:11rem;
+     }
+     .card-title{
+         font-size: 15px;
+     }
+     .card-text{
+         font-size:12px;
+     }
+     
+    #social,#project,#certificate{
+        font-size: 20px;
+    }
+    
+     .head{
+         font-size:20px;
+         text-align: center;
+     }
+     .intro{
+         font-size: 12px;
+         
+         
+     }
+     .moti{
+         font-size: 20px;
+     }
+     #moti2{
+         font-size: 15px;
+     }
+     #footer h2{
+         font-size: 30px;
+     }
+     #section4 .container a{
+         width:330px;
+         
+     }
+    
+     #section4 .container a h2{
+            font-size: 20px;
+     }
+     #section4 .container .first h2,.first i{
+         position: relative;
+         left:10px;
+         padding:0px 20px;
+     }
+     #section4 .container .first{
+         position: relative;
+         left:20px;
+     }
+     #section4 .container .second h2,.second i{
+        position: relative;
+        left:200px;
+        padding:0px 20px;
+    }
+    #section4 .container .second{
+        position: relative;
+        left:100px;
+    }
+    #section4 .container .third h2,.third i{ 
+        position: relative;
+        left:10px;
+        padding:0px 20px;
+    }
+    #section4 .container .third{
+        position: relative;
+        left:15px;
+    }
+    #section4 .container .fouth h2,.fouth i{
+        position: relative;
+        left:150px;
+        padding:0px 20px;  
+    }
+    #section4 .container .fouth{
+        position: relative;
+        left:100px;
+    }
+ 
+
+     #section5 .container a{
+         width:300px;
+     }
+     #section5 .container .first{
+         position: relative;
+         left:10px;
+     }
+     #section5 .container .second{
+         position: relative;
+         left:80px;
+     }
+     #section5 .container .third{
+         position: relative;
+         left:10px;
+     }
+     #section5 .container .forth{
+        position: relative;
+        left:80px;
+    }
+ }
